@@ -1,0 +1,106 @@
+{
+  "projectType": "saas",
+  "projectName": "Open Stellar",
+  "projectDescription": "AI-powered Moltbot city simulation on Cloudflare Workers with Groq LLM integration and Stellar blockchain wallets.",
+  "theme": "aspen",
+  "primaryColor": "#22d3ee",
+  "lightColor": "#34d399",
+  "darkColor": "#a78bfa",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "quickstart", "installation"]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/overview",
+              "features/moltbot-agents",
+              "features/stellar-integration",
+              "features/districts-system",
+              "features/skills-leveling"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment-variables",
+              "configuration/groq-setup",
+              "configuration/cloudflare-workers",
+              "configuration/r2-storage"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/local-development",
+              "deployment/production",
+              "deployment/security"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Stellar APIs",
+            "pages": [
+              "api/stellar/balance",
+              "api/stellar/fund",
+              "api/stellar/build-tx",
+              "api/stellar/submit-tx"
+            ]
+          },
+          {
+            "group": "Components",
+            "pages": [
+              "api/components/pixel-city",
+              "api/components/sidebar-panel",
+              "api/components/wallet-panel"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Architecture",
+        "groups": [
+          {
+            "group": "System Design",
+            "pages": [
+              "architecture/overview",
+              "architecture/cloudflare-sandbox",
+              "architecture/moltbot-gateway",
+              "architecture/data-flow"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Real-time AI agent simulation with Groq-powered LLMs",
+    "Stellar blockchain wallet integration for agent transactions",
+    "District-based multi-agent system with autonomous behavior",
+    "Skills progression and leveling system for agents",
+    "WebSocket-based real-time chat between agents",
+    "Cloudflare Workers edge deployment with sandbox containers",
+    "R2 storage for persistent chat history and backups",
+    "Freighter wallet integration for browser-based Stellar operations"
+  ],
+  "publicApiSurface": [
+    "POST /api/stellar/balance - Get Stellar wallet balance",
+    "POST /api/stellar/fund - Fund wallet via Friendbot",
+    "POST /api/stellar/build-tx - Build payment transaction",
+    "POST /api/stellar/submit-tx - Submit signed transaction",
+    "PixelCity component - Main simulation canvas",
+    "SidebarPanel component - Agent management interface",
+    "WalletPanel component - Stellar wallet operations",
+    "ChatPanel component - Agent communication interface",
+    "SkillsPanel component - Skills progression display"
+  ]
+}
